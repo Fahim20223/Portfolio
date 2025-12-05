@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +17,31 @@ const Header = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["about", "skills", "projects", "education", "contact"];
+      const scrollPosition = window.scrollY + 150;
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const offsetTop = element.offsetTop;
+          const offsetBottom = offsetTop + element.offsetHeight;
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 sticky top-0 z-[100] backdrop-blur-md bg-opacity-95 shadow-lg">
       <header className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
@@ -27,15 +53,23 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                className="text-white hover:text-purple-400 transition-colors duration-300 font-medium"
-                href={link.href}
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.href.substring(1);
+              return (
+                <a
+                  key={link.name}
+                  className={`relative text-white hover:text-purple-400 transition-colors duration-300 font-medium ${
+                    isActive ? "text-purple-400" : ""
+                  }`}
+                  href={link.href}
+                >
+                  {link.name}
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-purple-400 rounded-full"></span>
+                  )}
+                </a>
+              );
+            })}
           </div>
 
           {/* Social Icons */}
@@ -122,16 +156,23 @@ const Header = () => {
         >
           <div className="py-4 space-y-4">
             {/* Mobile Navigation Links */}
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                className="block text-white hover:text-purple-400 transition-colors duration-300 font-medium py-2"
-                href={link.href}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.href.substring(1);
+              return (
+                <a
+                  key={link.name}
+                  className={`block text-white hover:text-purple-400 transition-colors duration-300 font-medium py-2 ${
+                    isActive
+                      ? "text-purple-400 border-l-2 border-purple-400 pl-2"
+                      : ""
+                  }`}
+                  href={link.href}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              );
+            })}
 
             {/* Mobile Social Icons */}
             <div className="flex items-center space-x-6 pt-4 border-t border-gray-700">
