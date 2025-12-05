@@ -1,0 +1,13 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Business Administration - BBA",
+      "institution": "National University, Bangladesh",
+      "duration": "2022 - Present",
+      "grade": "Grade: Ongoing",
+      "description": "I am currently pursuing my Bachelor's degree in Business Administration (BBA) from National University, Bangladesh. Through this program, I am developing a comprehensive understanding of business principles, management strategies, and entrepreneurship. My coursework includes subjects such as Marketing, Finance, Human Resource Management, Business Communication, and Strategic Management. This degree is helping me build a strong foundation in both business operations and leadership skills, complementing my technical background in computer science.",
+      "logo": "https://images.seeklogo.com/logo-png/31/1/national-university-of-bangladesh-logo-png_seeklogo-313681.png"
+    }
+  ]
+}

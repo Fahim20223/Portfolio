@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Developer Portfolio Hero Section</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8a2be2",
+              "background-light": "#f5f3ff",
+              "background-dark": "#0a001a",
+            },
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+            boxShadow: {
+              glow: "0 0 20px 5px rgba(138, 43, 226, 0.4)",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/css">
+      .grid-bg {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 2rem 2rem;
+        background-position: center center;
+      }
+      .dark .grid-bg-dark {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 2rem 2rem;
+        background-position: center center;
+      }
+      .grid-bg-light {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.05) 1px,
+            transparent 1px
+          ),
+          linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        background-size: 2rem 2rem;
+        background-position: center center;
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-700 dark:text-slate-300"
+  >
+    <div class="relative min-h-screen overflow-hidden">
+      <div class="absolute inset-0 grid-bg-light dark:grid-bg-dark"></div>
+      <div
+        class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-primary/20 to-transparent dark:from-primary/30 dark:to-transparent opacity-50 dark:opacity-100"
+      ></div>
+      <div class="relative z-10">
+        <header class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <nav class="flex justify-between items-center">
+            <a class="text-xl font-bold text-slate-800 dark:text-white" href="#"
+              >&lt;Fahim / Shahrier&gt;</a
+            >
+            <div class="hidden md:flex items-center space-x-8">
+              <a
+                class="text-slate-800 dark:text-white hover:text-primary dark:hover:text-primary transition-colors duration-300 font-medium"
+                href="#"
+                >About</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+                >Skills</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+                >Experience</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+                >Projects</a
+              >
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+                >Education</a
+              >
+            </div>
+            <div class="flex items-center space-x-4">
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors duration-300"
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </header>
+        <main
+          class="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 md:pt-24 md:pb-32"
+        >
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="text-center lg:text-left">
+              <p
+                class="text-4xl sm:text-5xl font-semibold text-slate-800 dark:text-slate-200"
+              >
+                Hi, I am
+              </p>
+              <h1
+                class="text-5xl sm:text-7xl font-bold text-slate-900 dark:text-white mt-2"
+              >
+                Md Fahim Shahrier
+              </h1>
+              <p
+                class="text-3xl sm:text-4xl mt-4 text-slate-800 dark:text-slate-200"
+              >
+                I am a
+                <span class="text-primary font-semibold"
+                  >Full Stack Developer</span
+                >
+              </p>
+              <p
+                class="mt-6 max-w-xl mx-auto lg:mx-0 text-slate-600 dark:text-slate-400"
+              >
+                I am a full-stack developer with over 2 years of experience in
+                building scalable web applications. Skilled in both front-end
+                and back-end development, I specialize in the MERN stack and
+                other modern technologies to create seamless user experiences
+                and efficient solutions.
+              </p>
+              <button
+                class="mt-8 bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300 transform hover:scale-105"
+              >
+                DOWNLOAD CV
+              </button>
+            </div>
+            <div class="flex justify-center">
+              <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                <div
+                  class="absolute inset-0 bg-primary rounded-full shadow-glow"
+                ></div>
+                <img
+                  alt="Profile picture of Tarun Kaushik"
+                  class="relative w-full h-full object-cover rounded-full p-2 bg-background-light dark:bg-background-dark"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyYKqCqTbZmkgkDxAI6UCwEqttMKsWX9l6RuopNj9jb-Nfncs4_JA9BgsgQMOxyLCakNc6A8IG0sju3Vd8Y91cSU-yvQsQfvTHYaYSjpYmxW7NWtRCcBopcICCnIaZR48DGEfQmVJPB4ITpeIe8Jjft6_gMp7sDxqI7OWlSCJ71R1U4pgHr8g40kkdtnsMuPHxhW-7ixmrDqAjC83tybR950I32nttS9GC3towWX3S7jT3wDsC_61jDRFE4lx0NWVttIs9p8_4vRR1"
+                />
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <section
+      class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+    >
+      <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+            <h2
+              class="text-3xl sm:text-4xl font-bold tracking-wider uppercase text-text-light dark:text-white"
+            >
+              SKILLS
+            </h2>
+            <div class="w-20 h-1 bg-primary mx-auto mt-2 mb-4"></div>
+            <p
+              class="max-w-2xl mx-auto text-base sm:text-lg text-text-muted-light dark:text-text-muted-dark"
+            >
+              A collection of my technical skills and expertise honed through
+              various projects and experiences
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg border border-border-light dark:border-border-dark shadow-lg"
+            >
+              <h3
+                class="text-2xl font-semibold text-text-light dark:text-white mb-6 text-center"
+              >
+                Frontend
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="HTML logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5X_kk1jhMxcbDk1KU4QmsVERb2ZQfPotVAIcpj_MuP4ubaVnW3XeXcIkkh4E3W5EoaaRgIY3GuiJ8NmhysBV_JKMgnFbFtc940RjgNeRZJ5eCIIBHk8uU6e7_Syd8AS6oGD3JWeiM8K4Q_wRm8oafT8emnHbk-g19uZxCaC6ZXxeqTBqbcdFdFWIVPebJQNx_LVJINwNa5R1P8u5C1jKewSvq9VgiopXpdSQLEz8ORU2ktiRFflnjXSvpd1V3lD9kNwkrkgb5Ucm-"
+                  />
+                  <span>HTML</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="CSS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB03Ade66-GduExUa-eh4l2hEu9u6dIt-XZz_sVGvrLz2FqZEGE37nKNKMAQjtyLD3u9oRV69TP5hoYzunOsQ9mwhKRdO971CjQdp8bbdfaTS71f-ZyCN08xo_GFZ_wO7PeXe_woM8UTYxc8ZLbh8meY2jo5rzDc2RVezjcCE0CZUriog_5Sb1lLc-JxhWvjh9b1slPXVOD3ehXgwopozZhHoE50Mxp2fBPaD_NthvxWGcs2re6b93oSWzK82NrvXnRE2iNt4HcgT_t"
+                  />
+                  <span>CSS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="SASS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYrXS1naehpW-rmYCAA_jO-XYpff4qJ4H6CKHrZ_PbQlUJC5SazLGARgX5lVFv6mOEmg-Qd8d4IhjQHdd2HgR32G9AmUFgV_l8BVvIOf5uMfB04382sekELFfvGHbF3v2lULRy_avk58kGl-stq67bVqNED6BtG7G9zIuDIhOS78wMbVvM0DvCPYiL1o-YCYBp4asKpLQg6aqA9DUnqQNWXdbWYFdaQMTvmi8HEjyogkLBfGnDF6q05klTFbko8Za55I68xhCdCe0c"
+                  />
+                  <span>SASS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="JavaScript logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgVnPDkVeZ1AO-RlNu0PrmRS1Kkmun_W7Ej5uFiDAje7GjzVLTOCAOxD_QVb5hB9zrjST70FCvJRLV-k_icaqOQuKz4vCFhzfGpszSTvXz6I-U_NOjuZyuecVVgjT8mBaPnFf8jc0ua4sfyUO2IR6_U1nigO9XDY8mJUHZhsG8OvbwUCX3ExyPdHhIiZ-0wAYQxC8m0miPsRAv61GRue9a1vK3SHL8Jo7_Mzt71B2edCRqf_wwwRwO4DUiARq0yiwISsj0Qjus1mnM"
+                  />
+                  <span>JavaScript</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="React JS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwlHIiFqYS_NR-FnPI_McX1H1_e10FPcyi5LwGPb0J4go_Ref1orLoFlL5HezDAR6SPtE80L9McdgNIi9EOuRDo8uFmNGn349Kvmec1IZys_rOxOCUP0bOrrtgIL8zZmDC8ADL0fxKYdvbt42hdakwyA_cWC8HMyBXcdNSaKO1tk1MOKZjI3uitz2pHK98mo71gZ5jPee6wo40DjMMY7oMMw_xAZWj7Y_kvKIlUrpP6_SfHwbggVqtK_cuT9-QmSNMajGDPaYgfQBt"
+                  />
+                  <span>React JS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Angular logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCytqWV8As5AHAFrQehjCDo4IrGAP1wCOAEUIUp1wyIVHT8yoXRWnwdPFoc_Jt-eqPck8L_gCOGC50pz-T6BUuWfAd62rBJtofbpja_GkdTSvAHhNAAkQZQdCIMnpPYjdGlTKDaQo9yjITm83OVB3cLjzFwAS-_rXMl6kUmc-UGPuPo5S_SWnO8ohXdR-8XCSwZ2C5JjUG_rmfBuoiNR6V_PZRMXppShwObasviLCQQPty7JfM67GXCGmcqGFa2lGouHT10xFlxr_07"
+                  />
+                  <span>Angular</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Redux logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8LYG3hGDYLhC4BOE-4UK9UPHn5dWCSlOVa5UNC24ml7SSyVonYT4GiymwqsPyJZcvX8MNUaDVC7obdGfl1tDHT_JN37Cnq_dVVeefH-KLjAWgDZ997SRGXyUOc77Q9McfPQvwwSvi3d5lfso22SeZEitq2f4DKp9bOQIOoCFP-N5XiebxQes_BSVTcvyfLKLgmQF6ujc2Tm4fCkYvlBRfiJrfrWnphm-TgC4AaphDoO-9igwWBKUEiLvkjq9hJnePnlEps6iYx26t"
+                  />
+                  <span>Redux</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Next JS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtzIE8k46V86yBPjxSkStPVuxJDp08itJOyP_r-CMOwgZPFlz8a6wpoVjhwmfsaNYMQGFyGPigx9oO0PujBuphqGFdxw-td1wQV4QxsaS75JySiQBA4_IS63ruBtunw9_LJghjtr9uvRQCixO6cYZsav_yZ1OcQvpmiIwv1TxLJnahqqAwHCrFahEZCfPZOG2IqThaTYEO9J5PYTmW4sgLBM_AN5gpsXtgSEJV0mssv4v6xzmU916m-_AkfUC6TtuZEM7Z1mkJQEld"
+                  />
+                  <span>Next JS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Tailwind CSS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuArZ_M9nZgqebRYAaebK4llOGQCexgg2maSTvsGXidWNgfIrYSzQUTZprfVoIahbSno1lWgIrbEOtX3KvwjTX8Eal7ll2ofztOFF2sp0-s6aBt-pQ6QbiOqz5AdPd3TKIwAGPZv0PqbP4qUKj77gFRYf5li7r4zJ3RKDotAmkOgrmScQv5GNNOrBTerB82YEeC8ZVaCck7NS5NCDGeJrjUrjDxzZ7kEnUCK4D7Bj1HSgvIm4kSsUNIrPBmA-g7DbMD0XYLqzXiDm3hM"
+                  />
+                  <span>Tailwind CSS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="GSAP logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCszzl6RxLI1GVDP82obqOqMcwXHoX7EVbSPFrOY9XEmmhfQFfw4cK9RrJToRLkTEYfq4mJ_gBcxSt6gn7j6tHyFvdhz8pSHJ_WEdtx8AMyXyYimsPhmqDI_HXMsE92qQCxPzlWkszBW1_qHNw3v9i2OJgWBgUxhyQkU_rQIhs7SjCpynLpEKL6XzW0PzVPVLDGok2WVI0sUIWg59S0XVOdhwgu6QURPILJ5Z32191saJOl1Xho47rDIHqJnnlHUBUghv1bEAW05RHQ"
+                  />
+                  <span>GSAP</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Material UI logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV7GSxI9ReIc3jIeyvbSf9hEi72XBe4HkHKacp1RYP25O_pyqmB3qWucLpHHB2naGtUsSk4iTbXsshGUds7vSPH_GU8yIUciZA4O-NARB-Ua4qtO2YWrFswNpJXgGbLPXEpZsuwFpetGNupCRi7GhfU9fceR9j98D0IeHpA4VQUz7qvDj1jWgM05Blc0WBZC4xYhqKEAh3UWVLMepFySWITN3WKhlSQpp8Y_QY7t0C54RdEHpVHM5vqj7okjX5TT6nWXKZnxfIMo2O"
+                  />
+                  <span>Material UI</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Bootstrap logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMsJb6UXyCWo72QyEgfBbzD240XJMRMdTBDMNJySv2BWz9NhK-mQDR_MOsgd_9-8Hv5Z9MPqt-ay-hlLQp_Qn9aEjUr9QsrN6p2wLy0tq_FVh1HlOJC0ADbpxtvV09Hzw-OpTQYTxlcF9gny5LHI-FOSUuQiuV7EExwlQRSYsiBY5l4-_PNtzVCd9kjG3AgEq7D5QLuTAoe1tGpJOyxcF2CE5E3mNBuwq9HpCflCH8LXYQvEl8bUOkBx7xyKCuEVZyuziWv8znFFgI"
+                  />
+                  <span>Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg border border-border-light dark:border-border-dark shadow-lg"
+            >
+              <h3
+                class="text-2xl font-semibold text-text-light dark:text-white mb-6 text-center"
+              >
+                Backend
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Springboot logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdW2LTSahLkJrfxzVGtFI9wHNqTDsFl2JKTq8XthOV4tzluRoBeHPooEG3MLL1MdJPsvEPzedYZHxWDa6QlFAXkEB3wdreKmbZYR9E292hHweYvIgWu-2j12MaO1LY_R8He8Igp6-MURBwRS1o1LM3FbY1BMGpHrYmW5U-g53HVCiB01FMuJqNDSmIe6_dzglUaYttYzLiEpE2MlZQoYIt1dfmt5l6YZU7s-fE1uYKvUYOpPvg7DiDDvWSl_Kl3E8EdzQWakoTJDFl"
+                  />
+                  <span>Springboot</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Node JS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrnk1ZWLPWUAouE-MhlkMrNn3yprXk5duXKv2QF6rSZfMfh6wUNsg47OXTCJLlAywpRxuFSZTtDDlhtju2-x1EsI4WSS5P5ph2DXtTvoEMBHQJhgoCpvsIresGWZarMNjlvoMjCaDLL3bwwF4jZZCa24bJfmLPgHTc8x8yeE--yDKXqJRLTo1kR3QASZCBv6EhUHM62YDHgKXCkXgvbq84ziBh4BuXNOO0WLLttEvSFEjXFJhtcOaRQTPg1XIRHrt659LbdfOsPYo3"
+                  />
+                  <span>Node JS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Express JS logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPTYNX50yyVS1VnHvfmxmijRxxvnXoduWCAnkyy5YQCh77Rau6uHmp1vTLnj4othErhuOvMcsBSbS9SV_9o7juiUpcuUtycywRMVkKL0B6lm_Ht3OaDgXTJ0LAJrn0MLU3TJjkKMY0XTkoGquPW0Rse6MSJhHUELfwr3l9NHPahiCMaIjEG9U4N8LDXIsUAdGf4kGmxp3PZEBV8GfTGi2C8Dur9w0jwIg7tlXTF_uX6yqO57-Vgwt-qQus_MvYOqNS264l6aMA2lLt"
+                  />
+                  <span>Express JS</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="MySQL logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0EC4_FCDgXuxRhh4Nv88S4cUL6SzVOcWw72ehrWQV4xGMDtkcVBhExZ33zgz1E_ZzygAEaGM2IHUHzmZ3i_s7ep414oMXK4K_FW0GZQ0EThdTWZOawEGXFpABksjtv8mo4fyKNiwy2SLG_lyS29t6Sb24Yc-uwDz7ETSJqujV7W5vsX7H0bv7dvFNFJ3ZZnKbPoxVDPfxWCgkNdX3kzb5fUbR7hQv9KPJjtHidpaSMgWy0_Kzzv1oQGl2kwIxeOj59KAdSXkjZjL3"
+                  />
+                  <span>MySQL</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="MongoDB logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_g50L0i4lZVgf_nj_TLdZxnh1o0PPE0FkX3WIr1pxERlK6WnKR_3dl2fIhxOkQlpFJOFWpRn9XcRfl8F39LXeKkDlXxhrU8WH7JHluTMzuHuzi_iHdvjNohGK9phn7uyBLehkbZpcwfHlts79GGpF85TuhktYPf7Vo9igiGBMLG_VDx00rv2HvEa3EV0cihXkt7hKKMWKE8lZDPwl6QW5KDD7wOAUJelWaniokBZ3beZagtJYdTb5De4kfdLjBGvChL8aggiCqO_K"
+                  />
+                  <span>MongoDB</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Firebase logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM3Nh81pglbqdc8jaBCD07MfuCQmzajKpqbcD-okGdBPvlUVIxayG8O6KepBzsVVET7DU1Xa0LkjbOj_uFQt-k410bGqZWTJfZGr_BkpZ9fO6O9H8amIoa0C7R6tAdeVHPwMTTbM-gAM2tA279hmJCIc0s5PVtFCXm9x71rP5Dl96_UoA2S_abIebPw62v0Vxoyh_k14pJD_ytBvVjRA3My3lVpdW4bzexohRV9jXnsh3R34Exn71f2vX9mE_o-ChpyAyOavyJ0GkX"
+                  />
+                  <span>Firebase</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="PostgreSQL logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9vdDIDcsWlYI9nbT7qQchzXgv_IamofEPH0wJVdroQEtiMpdJGmmyBkKHhvH762kAFQq1O_voOp847mfXxcnQJi7xRYk6A-QJwQufbHyjSyLgFHkDimBkPYCS0mYI7qHVxNbGA1xNMvxr23nl8vma9EkTZSQrzHcgTq4cBL_hvXYZlrcZJO0nVc5QrmvUUrCCFrwQhRUvY2o_GTImS1YCwRKdrp85AgCdH2RjurdIX_vdWnorDYPVbqDMgDBJWzZxPKS4vvFiJsFq"
+                  />
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg border border-border-light dark:border-border-dark shadow-lg"
+            >
+              <h3
+                class="text-2xl font-semibold text-text-light dark:text-white mb-6 text-center"
+              >
+                Languages
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="C language logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpHFIGG254VJ1Si43epkAkO8HiKoK6WPdFvabs_VTzBrEsw6iTLfnNqAPjOQ_vsMgi3rq78zGsk7kxgKUeqo8Aa2v_QRAtK3dtwYDsw1h7Oq1mn6ocCKUF306tVSebHOHrsupkNah1gk95jTXJWxGFeeWNDgRfOJwirVxlsd8ETRyIxtb2--5m7udoc_MDiMv6kXPStbwgJ1k7SlgafIU8Hkg5zja-gNYP9xEFMTNbP66Jkqsq0K9ZwmulHXxlbzXUd6ryfkXYZ6fr"
+                  />
+                  <span>C</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="C++ language logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX6mVFUmty4iwEoJRJDWiNXDM8zIUpaV7UxVTGqbN3TPsSP6i0DX9yJX8JK_PqQgrhwSf_TxFhRIwdpHHQDUjoJ1cQz5HiMlLyD7FzDmX47uGxPK_FckyF5JIP4sZ3y8VRlHeCiMYOQXsq7DTvPt7d95npCbZCiuZDx6wz2X88HfW8XKF5J9_-rFlipymadSycCPmctlz-IJmVE2vyP-E7F3QDCEqaGAhC0LXLi5yDgPQQtA5NHpRZd1kRMh40wp1arzGgslZKU811"
+                  />
+                  <span>C++</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Java logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFThHNXg0Dkr6Ba_NyLdC3PI6sax8Ea1kA4cGh5ZFfHvhbcvqu8DZenw0zi8gc6sACqfKkhPZC41Ss5R1VkRHyh9hJvQDyH2_0xlnQ7OKWp73EBIGCPusvVvOgclJ79aTB05qjdbpj9ahr5ixKrlcYltr9zw2qmAkylk-0PeKUYEKOmceJcsKl9VNsUUVGGN6zkOyxS2HB6pkkDvwXr7N-u0OEDsYjCPhmkUpoI6OfOUZW_jqH5JR39uOyO_jwXwwk0UOE1xR2rfox"
+                  />
+                  <span>Java</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Python logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHmT_i0v5sUlOzhtHiakpGJcEcpLOJ_7Bx9WURLiPux01LNW56ytUfmKUwDIKw5wMqCDXxAHfV9LzlwNJvyCcbRhSW9W0raprcwWEUGPDTrfNfraORgbfBFFrw7POcLdBaTdxtLy6R4reUd92UDdY9vN3fysl8ogK1hByI9dSFS_75PC4mVVQXESQpTwyrtnadoeV4euTUXuG7yN3qR3T85oZL3xgeDKWrrCgjMMRzuXIZv0HcS7Dq0vD9D2RV4vywiC90jB6pz9bJ"
+                  />
+                  <span>Python</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="C-Sharp logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuChko_jtx7JqhMZeQ4gAm5X8JPIOAmaWFGsybWodTQJR6doWnSw5_mkXjlVJAMSbPV9it92MjqkXmK1ZqRFTgPfPPmWJ4WPUhzCi5kMuBvmtmkUmDc8PxovuD4i17Q9kFLh_QFIEipbnoLyQigs6dYddSMwm6xpZddBLlFWaT3h-j1vuJSQzDD_jChloqsjEjetv9Cal7_oGgjh51bUcJtEW2gTI3E-oja1_1z0gqX3qia0_QCSvsHLO4VzaLzD3KYL3l4Y3CavaiF-"
+                  />
+                  <span>C-Sharp</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="JavaScript logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbOXW7MPMJBLGh2192scBx2t7YEra2uGsWx9_heGbpn9FuLMh1BkwZ1hCFSnAHVV6T_Rzy6bvEaQjv7gH4ner2eZifpDl0P3EsXuVYu94XIuT0_gSXxfKKeiW82pGjusfim_OaF3ufmaApLq_32BFjVsch5OSNKl1jDgHhzGV7S_fjbxK8Z7v27jhosQeeiE1pjfBOSH9kg-u-gDUa86MKHm4UYOplbcsrUk3Gk_hmNjr-HXk14zR76SZ5WzwRet3D8SDiYXLvY8sU"
+                  />
+                  <span>JavaScript</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="TypeScript logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJd40a91WXvw4XIzu-J6ohRPDhdrlysXuDcLwDpRch0VA4PgCx9jeOLhIM7R7zZCuhbk3R815-9PAeqewgbitC_Qg83LB-C7BAiRvKVNY9n2lTD2XxaRReqRigmhA5UPzG50WKjf4TiX7lJcNMgmoSW9fC0gzdyerqam-ylW7QPmJ9c6sT094XG-xxac48vfcjQNFJolAt_aRApwW7pddP23f6tYR9O4Qr__2b4IWl8mnSkl-dzztx8bmQ_1rLPidLmRIXWmK90xB0"
+                  />
+                  <span>TypeScript</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-card-light dark:bg-card-dark p-8 rounded-lg border border-border-light dark:border-border-dark shadow-lg"
+            >
+              <h3
+                class="text-2xl font-semibold text-text-light dark:text-white mb-6 text-center"
+              >
+                Tools
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Git logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp1luW4DkHPvwzpq4ThW01cOeS4Z8CYemLppMFKtrswQ75U13AEZXROgVSKpv1Zd5oymKjL_NQSj9-Fgjt8Pokf8gx6gWiyn8iXocCV2DnIehqsiAwga2WPnwDL2S6y33Upgc9BG3nah5c3PXrT5ZME58zAM9T2JgU6C13wGkegmIpCJh8V7M5I5XhqGNFQz5TUdhKclwCPsRqiI3XLg-g57mU5ydaAqcEfRqjCuf8fBhHgUAEzxv63BGtNpGWUwCk_yEfABDMk9qh"
+                  />
+                  <span>Git</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="GitHub logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuApDjuObf_U2jaKw-mKDsUnk7hU3v9BPD62iq1M8bkRj-Dobtg6SzSfmBAV09e-K2455PMgb0FjqXsZEjGcHkZ7It_JTF4edhs0ooYUGyFvYOXi1XvJfemCnkCpeLTdxGnJzbIPOFh9zxpeF5FAJJoJTioGVCTOJVaDBhsPgbI0ogUf0eA2XJgcFpltSilaJo8_ZzdUBoqZcYIb0l2dRHNXF24AI91SOas0mz7pLux2loAbSVpdtQxxlGI9o86L7GWx_v8jG9E2n6JV"
+                  />
+                  <span>GitHub</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="VS Code logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZNPtdFacJ9HMJAfSg2a1dfeDFAmTdulFjCn_rFgSeCRXGFVuZR6UzYsTFj5TtxOpko_n9VaIggeL_b6vzDmw6YlAW5bF408q63sm37bJChk_tNPpnU6XwaXYhUNpCk7GkcaVdeKrnnqE9nkI2-Po5qr3SBx7R0bEEsmVFdcvZ0VkdTnovUWuvmtHzLVl07J5FS84pxuoJWs5xT1SNzdaOach23Tk8X6dmgQ6pCmKkquN94C8c1ys04E1ia2iU3s9d5ujH9WBf0kkE"
+                  />
+                  <span>VS Code</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Postman logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJfItEixPg6myvUc3HIMhpObQo56Lyn3wrtKNJFAd4Yj75TGiEYQVpx1G7o6targSH1UBlolWce4J02VN27dobk1LiZjdMYNTu_22dtR6bMX49Cwm97aKyEjFJ9vRuI_dxkyuODwIKqsaF-7a_fKwYLEXDlgD0g7vjQ86SJiMV1NppG_He1jy_7a8Lah1rB_yLaZCan1imDQEjedUIgmZICRbxXm-u-kJ9HpppMRcMTxhuCjaNAw9-qrrTHOJLniI2cJjIh8gKXPt9"
+                  />
+                  <span>Postman</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Compass logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe8Gqmj44cTTjfM9cmRt1pimt7FBLQtFdfb9A7i1cYNCP-Jgd1CH1Ej74BczXDCfK6FiS9iEDkVC5n8LEBoYBmqFiwmpS2AEeTtuz1DPonKNkAnY0y4qB4vinpTjDie7Z5C2xLlOl7BhKd5j-OKH3VCnxqRZIFBayogzZKSQlm_Ri2YbWIqd2G7hdYNrCectRDvEG_8WoqykiThIWS3E2bYGgdhhEEOgW0u3SgsUZaxfJO1HP2Xjo_-t7CR-pzjpRgUnaYVwATFlJ0"
+                  />
+                  <span>Compass</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Vercel logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr_xNjTv4Vc3wvWDO1cu9JFpxNDcei744mF4ZD0v0mjU0HTn_3uwsbRIPBg5E_tOx66arh9Uk27CERTmyHowFK2hqvUGdoDFlywjYpVn_Yi8ruzpjCq304AFUGTpQGuxOm5IUMafcP0S3jL7txi7f0IkMGW5iXRZ623l6hfzBOTRajfYqxuzqeFc7Qo9X2TD0tfj9L2AiVyZbMVK5Y9WdoMuqIe9SklPRyoZK63yGsk2y_w2VDlNqE75cKRlorsmnnA3PixxXNx5l4"
+                  />
+                  <span>Vercel</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Netlify logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi1iFRu-LXAmSn82CLpDf9EJNTJZdEs1gacaKIaFyhAdoO2FiclmwP54U4SlwHIvZSllv7uBJ4R9iomVvBxAThJAkaCo3mTxZH_oF9kFnk_2Mxx7zO3taXSxSxVZ9H_gezLhC9PZoqC1kqo_jfAO5uyMCX_wrxVvULiRNp6WnWY3bFg65Zmpgv9cZrm-HmMo0dm3khkiyNfBVuqah2_3fbZHo3v9vGM-t2pFAnFpq6PUZsImbVp8f5TVT_2TbFGQHSs3LMx9bJPy79"
+                  />
+                  <span>Netlify</span>
+                </div>
+                <div
+                  class="flex items-center space-x-3 p-3 rounded-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark"
+                >
+                  <img
+                    alt="Figma logo"
+                    class="w-6 h-6"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOwHNjK_uXjT9O307Cw-aFn6Cl4i3UuVPzvIYiTbLUuWpcPvxe3YHl1kvWMPK0K2RG_ZHvLFLSQQgvLEGccHyFzB5tsAhGU7diM8VY2blxuxp5lKBii_60Q5SnxOF75TqoP5VsW2s0RswEcmxN3UXuZx9I9ETnmzl1DkKQ9rnpqYokBechbc2oQvsFg2FM44TrB1d5IgJiweRaE2uliGJhk-WJR-2Y-g6AkhXIr5n9CwVAplcSHfbOgPsnulaBpNYtldF3AY5zyYcM"
+                  />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section
+      class="font-display bg-background-light dark:bg-background-dark bg-grid-light dark:bg-grid-dark text-slate-700 dark:text-slate-300"
+    >
+      <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center">
+            <h2
+              class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-800 dark:text-white"
+            >
+              PROJECTS
+            </h2>
+            <div class="mt-4 mb-8 flex justify-center">
+              <div class="w-16 h-1 bg-primary rounded-full"></div>
+            </div>
+            <p
+              class="mt-4 max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-400"
+            >
+              A showcase of the projects I have worked on, highlighting my
+              skills and experience in various technologies
+            </p>
+          </div>
+          <div
+            class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
+            <div
+              class="bg-background-light/80 dark:bg-slate-900/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-slate-200 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="overflow-hidden rounded-md border border-slate-300 dark:border-slate-700"
+              >
+                <img
+                  alt="Screenshot of the GitHub Profile Detective application"
+                  class="w-full h-auto object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkUkuO-YIojND0QqdyVfsj5i2oLBlfi4JeMPubwEUNFlyjqjG638JCCkN4gV93GgjWGbH63tkuzHEoakLjOf_m_A49DjczHLXpDusQ9wD6CBVjT29WT0X0Ir_UEGLjNgtWZdoQTZKQUeTDGojcYkvLlclz7V2f2g1rC0PLyu1MEJ7WRlgQ2Qp34EHnixDR8EwMwW0ULfaxeeLVo06vX5kje2TPOhEds6UHEONCrfe4ZogENTfmLZkwP_eJ1apCsvNyphqH9F-owj7B"
+                />
+              </div>
+              <div class="mt-6 flex-grow">
+                <h3 class="text-xl font-bold text-slate-800 dark:text-white">
+                  GitHub Profile Detective
+                </h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">
+                  A powerful and user-friendly React.js application designed to
+                  uncover and showcase detailed GitHub profile...
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >JavaScript</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >React JS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >API</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-background-light/80 dark:bg-slate-900/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-slate-200 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="overflow-hidden rounded-md border border-slate-300 dark:border-slate-700"
+              >
+                <img
+                  alt="Screenshot of the CS Prep application"
+                  class="w-full h-auto object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAqgkr-JsEahLnXB_jnHtWDeiIAIqoW7HKwYttftuFBpc4J_SPeosQZdwxKC_gF4TJGhWZ9zWEOMbvPp7EQil2pzEtrAryed6y2rzLJcp7gooB8hvRofk0IH1khQN0bw7ddvzygWJBncWyPr9qCxtg91MVnt9eNhADRYVMdjyy6kQGYgcjAQWypt-IEn7KmVr8B7prf5FzAUBBzfW9rrtdeqih93RNK_4XrPXvbf_9MHKb8VA0BOpGRp94NSXH6uvoMfFauxVh-Jjy"
+                />
+              </div>
+              <div class="mt-6 flex-grow">
+                <h3 class="text-xl font-bold text-slate-800 dark:text-white">
+                  CS Prep
+                </h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">
+                  A full-stack quiz-based platform designed for GATE/UGC NET
+                  students to practice previous year questions...
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >React JS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >MongoDB</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >Express</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-background-light/80 dark:bg-slate-900/80 backdrop-blur-sm p-6 rounded-lg shadow-lg border border-slate-200 dark:border-slate-800 flex flex-col hover:-translate-y-2 transition-transform duration-300"
+            >
+              <div
+                class="overflow-hidden rounded-md border border-slate-300 dark:border-slate-700"
+              >
+                <img
+                  alt="Screenshot of the Movie Recommendation App"
+                  class="w-full h-auto object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF3xny5Fn_0rgSaadL9Nmc-gtfuNAKPiWya709LtooigGIX9saMY6j3aVVjMTXWSjtHjipuhUEEX5WEPbUcEJmEFiCtjkkNjHo4eBi8YJ0-v2eUjCT2O6_CavqqgnyYDEDDVidcmLxAJ5IPAEAgXLyNl9EberPYumEbQUqwlYAWxbMrBP8BsEFUHDw3IpaktFg1zNpyFVM2i6OunsIjW7BN031Vbt1pPhXEOSzUJvLJ3S7MgfkxSs7OJvW1hYNyOeJicZN0DYVMg-t"
+                />
+              </div>
+              <div class="mt-6 flex-grow">
+                <h3 class="text-xl font-bold text-slate-800 dark:text-white">
+                  Movie Recommendation App
+                </h3>
+                <p class="mt-2 text-slate-600 dark:text-slate-400">
+                  A React-based web application that provides movie
+                  recommendations based on different criteria, such as...
+                </p>
+              </div>
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >React JS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >API</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary/90 text-xs font-semibold px-2.5 py-1 rounded-full"
+                  >JavaScript</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section
+      class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-300 min-h-screen flex flex-col"
+    >
+      <div class="flex-grow flex items-center justify-center p-4">
+        <main
+          class="w-full max-w-4xl mx-auto flex flex-col items-center justify-center space-y-12 py-16"
+        >
+          <header class="text-center">
+            <h1
+              class="text-4xl font-bold tracking-wider text-gray-900 dark:text-white uppercase mb-4"
+            >
+              CONTACT
+            </h1>
+            <div class="w-16 h-1 bg-primary mx-auto mb-4"></div>
+            <p class="text-gray-600 dark:text-gray-400">
+              I'd love to hear from you—reach out for any opportunities or
+              questions!
+            </p>
+          </header>
+          <div
+            class="w-full max-w-md bg-white/5 dark:bg-gray-500/5 border border-white/10 dark:border-gray-700/50 rounded-lg p-8 shadow-2xl shadow-black/20 backdrop-blur-sm"
+          >
+            <h2
+              class="text-xl font-semibold text-gray-900 dark:text-white mb-6 flex items-center"
+            >
+              Connect With Me
+              <span class="ml-2 text-lg">🚀</span>
+            </h2>
+            <form action="#" class="space-y-6" method="POST">
+              <div>
+                <label class="sr-only" for="email">Your Email</label>
+                <input
+                  class="w-full bg-gray-900/50 border border-gray-700 text-white placeholder-gray-400 rounded-md py-3 px-4 focus:ring-primary focus:border-primary transition duration-200"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  type="email"
+                />
+              </div>
+              <div>
+                <label class="sr-only" for="name">Your Name</label>
+                <input
+                  class="w-full bg-gray-900/50 border border-gray-700 text-white placeholder-gray-400 rounded-md py-3 px-4 focus:ring-primary focus:border-primary transition duration-200"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label class="sr-only" for="subject">Subject</label>
+                <input
+                  class="w-full bg-gray-900/50 border border-gray-700 text-white placeholder-gray-400 rounded-md py-3 px-4 focus:ring-primary focus:border-primary transition duration-200"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label class="sr-only" for="message">Message</label>
+                <textarea
+                  class="w-full bg-gray-900/50 border border-gray-700 text-white placeholder-gray-400 rounded-md py-3 px-4 focus:ring-primary focus:border-primary transition duration-200 resize-none"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  class="w-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold py-3 px-6 rounded-md hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background-dark focus:ring-pink-500 transition-opacity duration-300"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+      <footer class="w-full py-8">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <div class="mb-6">
+            <h3 class="text-xl font-bold text-primary">Tarun Kaushik</h3>
+          </div>
+          <nav
+            class="flex justify-center items-center gap-x-6 sm:gap-x-8 mb-6 text-sm font-medium text-gray-700 dark:text-gray-300"
+          >
+            <a class="hover:text-primary transition-colors" href="#">About</a>
+            <a class="hover:text-primary transition-colors" href="#">Skills</a>
+            <a class="hover:text-primary transition-colors" href="#"
+              >Experience</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Projects</a
+            >
+            <a class="hover:text-primary transition-colors" href="#"
+              >Education</a
+            >
+          </nav>
+          <div class="flex justify-center items-center gap-x-6 mb-6">
+            <a
+              aria-label="Facebook"
+              class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              aria-label="Twitter"
+              class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                ></path>
+              </svg>
+            </a>
+            <a
+              aria-label="LinkedIn"
+              class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              aria-label="Instagram"
+              class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              aria-label="YouTube"
+              class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors"
+              href="#"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.78 22 12 22 12s0 3.22-.42 4.814c-.23.861-.907 1.538-1.768 1.768C18.218 19 12 19 12 19s-6.218 0-7.812-1.418c-.861-.23-1.538-.907-1.768-1.768C2.002 15.22 2 12 2 12s0-3.22.42-4.814c.23-.861.907-1.538 1.768-1.768C5.782 5 12 5 12 5s6.218 0 7.812.418zM9.57 15.584l6.166-3.583-6.166-3.583v7.166z"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="border-t border-gray-200 dark:border-gray-700 pt-6">
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              © 2025 Fahim Shahrier. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "GitHub Profile Detective",
+      "description": "A powerful and user-friendly ReactJS application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username and explore comprehensive data including repositories, contributions, and more.",
+      "image": "/images/github-detective.png",
+      "tags": ["HTML", "CSS", "JavaScript", "React JS", "API"],
+      "github": "https://github.com/yourusername/github-profile-detective",
+      "demo": "https://github-detective-demo.com"
+    },
+    {
+      "id": 2,
+      "title": "CS Prep",
+      "description": "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive study materials and performance analytics.",
+      "image": "/images/cs-prep.png",
+      "tags": [
+        "React JS",
+        "Node.js",
+        "MongoDB",
+        "Express",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": "https://github.com/yourusername/cs-prep",
+      "demo": "https://cs-prep-demo.com"
+    },
+    {
+      "id": 3,
+      "title": "Movie Recommendation App",
+      "description": "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The app features an intuitive interface and real-time movie data.",
+      "image": "/images/movie-app.png",
+      "tags": ["React JS", "API", "HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/yourusername/movie-recommendation",
+      "demo": "https://movie-recommendation-demo.com"
+    }
+  ]
+}
