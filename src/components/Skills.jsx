@@ -59,6 +59,11 @@ const Skills = () => {
       { name: "VS Code", icon: "💻", color: "from-blue-500 to-blue-600" },
       { name: "Postman", icon: "📮", color: "from-orange-500 to-orange-600" },
       // { name: "Compass", icon: "🧭", color: "from-green-500 to-green-600" },
+      {
+        name: "Thunder Client",
+        icon: "⚡",
+        color: "from-purple-500 to-purple-600",
+      },
       { name: "Vercel", icon: "▲", color: "from-gray-700 to-gray-800" },
       { name: "Netlify", icon: "🌐", color: "from-teal-500 to-teal-600" },
       { name: "Figma", icon: "🎨", color: "from-purple-500 to-pink-500" },
