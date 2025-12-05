@@ -76,7 +76,7 @@ const Hero = () => {
             >
               I am a{" "}
               <span className="text-primary font-semibold">
-                Full Stack Developer
+                MERN Stack Developer
               </span>
             </motion.p>
             <motion.p
