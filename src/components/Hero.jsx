@@ -93,8 +93,10 @@ const Hero = () => {
               real problems. I’m always improving my skills and staying updated
               with modern web technologies to deliver high-quality work.
             </motion.p>
-            <motion.button
-              className="mt-8 bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300"
+            <motion.a
+              href="https://drive.google.com/uc?export=download&id=1W3QFXuBr0Gd0WSGJwCVOoeL0Hs6FF21D"
+              download="Fahim_Shahrier_Resume.pdf"
+              className="mt-8 inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
@@ -102,8 +104,8 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              DOWNLOAD CV
-            </motion.button>
+              DOWNLOAD RESUME
+            </motion.a>
           </motion.div>
           <motion.div
             className="flex justify-center"
