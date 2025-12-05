@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ title, description, image, tags, github, demo, index }) => (
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  tags,
+  github,
+  demo,
+  index,
+}) => (
   <motion.div
     className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 overflow-hidden backdrop-blur-sm"
     initial={{ opacity: 0, y: 50 }}
@@ -37,7 +45,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo, index }) =
         className="text-2xl font-bold text-white mb-4"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         {title}
@@ -48,7 +56,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo, index }) =
         className="text-gray-400 text-sm leading-relaxed mb-6"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         {description}
@@ -59,7 +67,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo, index }) =
         className="flex flex-wrap gap-2 mb-4"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         {tags.map((tag, tagIndex) => (
@@ -68,7 +76,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo, index }) =
             className="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30"
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.3, delay: 0.5 + tagIndex * 0.1 }}
             whileHover={{ scale: 1.1 }}
           >
@@ -82,7 +90,7 @@ const ProjectCard = ({ title, description, image, tags, github, demo, index }) =
         className="flex gap-3 mt-6"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 0.5, delay: 0.6 }}
       >
         {github && (
@@ -166,14 +174,14 @@ const Projects = () => {
           className="text-center mb-16"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h2
             className="text-5xl font-bold text-white mb-4 relative inline-block"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             PROJECTS
@@ -181,7 +189,7 @@ const Projects = () => {
               className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
               initial={{ width: 0 }}
               whileInView={{ width: 96 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.3 }}
             />
           </motion.h2>
@@ -189,7 +197,7 @@ const Projects = () => {
             className="text-gray-400 mt-8 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             A showcase of the projects I have worked on, highlighting my skills

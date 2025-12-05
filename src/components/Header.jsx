@@ -42,7 +42,7 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               className="text-slate-300 hover:text-purple-400 transition-colors duration-300"
-              href="https://github.com/yourusername"
+              href="https://github.com/Fahim20223"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,7 +58,7 @@ const Header = () => {
             </a>
             <a
               className="text-slate-300 hover:text-purple-400 transition-colors duration-300"
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/fahimshahrier/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -137,7 +137,7 @@ const Header = () => {
             <div className="flex items-center space-x-6 pt-4 border-t border-gray-700">
               <a
                 className="text-slate-300 hover:text-purple-400 transition-colors duration-300"
-                href="https://github.com/yourusername"
+                href="https://github.com/Fahim20223"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -153,7 +153,7 @@ const Header = () => {
               </a>
               <a
                 className="text-slate-300 hover:text-purple-400 transition-colors duration-300"
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/fahimshahrier/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

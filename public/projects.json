@@ -2,38 +2,43 @@
   "projects": [
     {
       "id": 1,
-      "title": "GitHub Profile Detective",
-      "description": "A powerful and user-friendly ReactJS application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username and explore comprehensive data including repositories, contributions, and more.",
-      "image": "/images/github-detective.png",
-      "tags": ["HTML", "CSS", "JavaScript", "React JS", "API"],
-      "github": "https://github.com/yourusername/github-profile-detective",
-      "demo": "https://github-detective-demo.com"
+      "title": "Hero IO — App Store Showcase",
+      "description": "A responsive and interactive app store web application where users can browse, search, sort, and install apps. Includes detailed app pages, review charts, installation management, and smooth UI animations.",
+      "image": "https://i.ibb.co.com/FbyTrhHP/Screenshot-2025-12-05-150120.png",
+      "tags": [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "React Router",
+        "Recharts"
+      ],
+      "github": "https://github.com/Fahim20223/assignment-8",
+      "demo": "https://most-popular-apps.netlify.app/"
     },
     {
       "id": 2,
-      "title": "CS Prep",
-      "description": "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive study materials and performance analytics.",
-      "image": "/images/cs-prep.png",
+      "title": "GreenNest — Indoor Plant Care & Shopping",
+      "description": "GreenNest is a modern single-page web application for plant lovers, offering plant shopping, care guides, customer reviews, and expert consultation booking. Built with Firebase authentication and smooth React Router navigation.",
+      "image": "https://i.ibb.co.com/PvS4FNF8/Screenshot-2025-12-05-150641.png",
       "tags": [
-        "React JS",
-        "Node.js",
-        "MongoDB",
-        "Express",
-        "HTML",
-        "CSS",
+        "React",
+        "Tailwind CSS",
+        "Firebase",
+        "React Router",
         "JavaScript"
       ],
-      "github": "https://github.com/yourusername/cs-prep",
-      "demo": "https://cs-prep-demo.com"
+      "github": "https://github.com/Fahim20223/assignment-9",
+      "demo": "https://assignment-9-4089f.web.app/"
     },
+
     {
       "id": 3,
-      "title": "Movie Recommendation App",
-      "description": "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The app features an intuitive interface and real-time movie data.",
-      "image": "/images/movie-app.png",
-      "tags": ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/yourusername/movie-recommendation",
-      "demo": "https://movie-recommendation-demo.com"
+      "title": "Artify — Creative Artwork Showcase",
+      "description": "A modern art-sharing platform where artists can upload, display, and manage artworks with categories, likes, favorites, and private galleries. Includes Firebase authentication, responsive UI, dark/light mode, and smooth animations.",
+      "image": "https://i.ibb.co.com/W4Bfywbz/Screenshot-2025-12-05-151000.png",
+      "tags": ["React", "Tailwind CSS", "Firebase Auth", "Express", "MongoDB"],
+      "github": "https://github.com/Fahim20223/artify-client",
+      "demo": "https://artify-client-d88f7.web.app/"
     }
   ]
 }

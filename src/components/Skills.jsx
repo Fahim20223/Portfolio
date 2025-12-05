@@ -70,7 +70,7 @@ const Skills = () => {
       className="group relative"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: false, margin: "-50px" }}
       transition={{
         duration: 0.5,
         delay: index * 0.1,
@@ -105,7 +105,7 @@ const Skills = () => {
       className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700 hover:border-purple-500 transition-all duration-300"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: false, margin: "-100px" }}
       transition={{
         duration: 0.6,
         delay: delay * 0.1,
@@ -117,7 +117,7 @@ const Skills = () => {
         className="text-2xl font-bold text-gray-200 mb-6 text-center"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 0.5, delay: delay * 0.1 + 0.2 }}
       >
         {title}
@@ -137,14 +137,14 @@ const Skills = () => {
           className="text-center mb-12"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h1
             className="text-5xl font-bold text-white mb-4"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             SKILLS
@@ -152,7 +152,7 @@ const Skills = () => {
               className="h-1 w-32 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mt-2 rounded-full"
               initial={{ width: 0 }}
               whileInView={{ width: 128 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.3 }}
             ></motion.div>
           </motion.h1>
@@ -160,7 +160,7 @@ const Skills = () => {
             className="text-gray-300 text-lg"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             A collection of my technical skills and expertise honed through

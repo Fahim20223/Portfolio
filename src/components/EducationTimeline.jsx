@@ -42,7 +42,7 @@ const EducationCard = ({
           }`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <motion.div
@@ -64,7 +64,7 @@ const EducationCard = ({
               className="text-xl font-bold text-white mb-1"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               {degree}
@@ -73,7 +73,7 @@ const EducationCard = ({
               className="text-purple-400 font-medium text-sm mb-1"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               {institution}
@@ -82,7 +82,7 @@ const EducationCard = ({
               className="text-gray-500 text-xs"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
               {duration}
@@ -95,7 +95,7 @@ const EducationCard = ({
           className="mb-4"
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <motion.span
@@ -115,7 +115,7 @@ const EducationCard = ({
           className="text-gray-400 text-sm leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.7 }}
         >
           {description}
@@ -131,7 +131,7 @@ const EducationCard = ({
       className="hidden lg:flex flex-col items-center flex-shrink-0"
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{
         duration: 0.5,
         delay: index * 0.2 + 0.3,
@@ -194,14 +194,14 @@ const EducationTimeline = () => {
           className="text-center mb-20"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <motion.h2
             className="text-5xl font-bold text-white mb-4 relative inline-block"
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             EDUCATION
@@ -209,7 +209,7 @@ const EducationTimeline = () => {
               className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 h-1 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"
               initial={{ width: 0 }}
               whileInView={{ width: 128 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ duration: 0.8, delay: 0.3 }}
             />
           </motion.h2>
@@ -217,7 +217,7 @@ const EducationTimeline = () => {
             className="text-gray-400 mt-8 max-w-3xl mx-auto"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             My education has been a journey of learning and development. Here
@@ -232,7 +232,7 @@ const EducationTimeline = () => {
             className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-500"
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
           />
 
