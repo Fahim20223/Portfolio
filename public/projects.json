@@ -2,21 +2,47 @@
   "projects": [
     {
       "id": 1,
-      "title": "Hero IO — App Store Showcase",
-      "description": "A responsive and interactive app store web application where users can browse, search, sort, and install apps. Includes detailed app pages, review charts, installation management, and smooth UI animations.",
-      "image": "https://i.ibb.co.com/FbyTrhHP/Screenshot-2025-12-05-150120.png",
+      "title": "BookPilot — Library-to-Home Delivery System",
+      "description": "A modern library delivery management system enabling users to request book pickup and delivery from nearby libraries. Features include smart search, order tracking, wishlist system, payment integration, and role-based dashboards for users, librarians, and admins.",
+      "image": "https://i.ibb.co.com/placeholder-bookpilot.png",
       "tags": [
         "React",
         "Tailwind CSS",
-        "JavaScript",
-        "React Router",
-        "Recharts"
+        "Firebase",
+        "Express",
+        "MongoDB",
+        "Stripe",
+        "JWT"
       ],
-      "github": "https://github.com/Fahim20223/assignment-8",
-      "demo": "https://most-popular-apps.netlify.app/"
+      "github": "https://github.com/Fahim20223/bookpilot-client",
+      "demo": "https://book-pilot-2c633.web.app/"
     },
     {
       "id": 2,
+      "title": "Artify — Creative Artwork Showcase",
+      "description": "A modern art-sharing platform where artists can upload, display, and manage artworks with categories, likes, favorites, and private galleries. Includes Firebase authentication, responsive UI, dark/light mode, and smooth animations.",
+      "image": "https://i.ibb.co.com/W4Bfywbz/Screenshot-2025-12-05-151000.png",
+      "tags": ["React", "Tailwind CSS", "Firebase Auth", "Express", "MongoDB"],
+      "github": "https://github.com/Fahim20223/artify-client",
+      "demo": "https://artify-client-d88f7.web.app/"
+    },
+    {
+      "id": 3,
+      "title": "GizmoGrid — Next.js eCommerce Platform",
+      "description": "A comprehensive eCommerce platform with Google OAuth authentication, protected product management dashboard, search and category filters, and responsive design. Features public product browsing and secure user-specific product listings.",
+      "image": "https://i.ibb.co.com/placeholder-gizmogrid.png",
+      "tags": [
+        "Next.js 16",
+        "Firebase Auth",
+        "Tailwind CSS",
+        "Express.js",
+        "MongoDB"
+      ],
+      "github": "https://github.com/Fahim20223/gizmogrid",
+      "demo": "https://gizmogrid.vercel.app/"
+    },
+    {
+      "id": 4,
       "title": "GreenNest — Indoor Plant Care & Shopping",
       "description": "GreenNest is a modern single-page web application for plant lovers, offering plant shopping, care guides, customer reviews, and expert consultation booking. Built with Firebase authentication and smooth React Router navigation.",
       "image": "https://i.ibb.co.com/PvS4FNF8/Screenshot-2025-12-05-150641.png",
@@ -30,15 +56,20 @@
       "github": "https://github.com/Fahim20223/assignment-9",
       "demo": "https://assignment-9-4089f.web.app/"
     },
-
     {
-      "id": 3,
-      "title": "Artify — Creative Artwork Showcase",
-      "description": "A modern art-sharing platform where artists can upload, display, and manage artworks with categories, likes, favorites, and private galleries. Includes Firebase authentication, responsive UI, dark/light mode, and smooth animations.",
-      "image": "https://i.ibb.co.com/W4Bfywbz/Screenshot-2025-12-05-151000.png",
-      "tags": ["React", "Tailwind CSS", "Firebase Auth", "Express", "MongoDB"],
-      "github": "https://github.com/Fahim20223/artify-client",
-      "demo": "https://artify-client-d88f7.web.app/"
+      "id": 5,
+      "title": "Hero IO — App Store Showcase",
+      "description": "A responsive and interactive app store web application where users can browse, search, sort, and install apps. Includes detailed app pages, review charts, installation management, and smooth UI animations.",
+      "image": "https://i.ibb.co.com/FbyTrhHP/Screenshot-2025-12-05-150120.png",
+      "tags": [
+        "React",
+        "Tailwind CSS",
+        "JavaScript",
+        "React Router",
+        "Recharts"
+      ],
+      "github": "https://github.com/Fahim20223/assignment-8",
+      "demo": "https://most-popular-apps.netlify.app/"
     }
   ]
 }
