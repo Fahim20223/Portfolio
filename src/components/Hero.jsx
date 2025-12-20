@@ -76,7 +76,7 @@ const Hero = () => {
             >
               I am a{" "}
               <span className="text-primary font-semibold">
-                MERN Stack Developer
+                Full Stack Developer
               </span>
             </motion.p>
             <motion.p
@@ -94,7 +94,7 @@ const Hero = () => {
               with modern web technologies to deliver high-quality work.
             </motion.p>
             <motion.a
-              href="https://drive.google.com/uc?export=download&id=1W3QFXuBr0Gd0WSGJwCVOoeL0Hs6FF21D"
+              href="https://drive.google.com/uc?export=download&id=1AMIEVMc3uIIdnO8N1cVlbNJ9ZpqNtA_9"
               download="Fahim_Shahrier_Resume.pdf"
               className="mt-8 inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}

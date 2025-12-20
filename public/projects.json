@@ -4,7 +4,7 @@
       "id": 1,
       "title": "BookPilot — Library-to-Home Delivery System",
       "description": "A modern library delivery management system enabling users to request book pickup and delivery from nearby libraries. Features include smart search, order tracking, wishlist system, payment integration, and role-based dashboards for users, librarians, and admins.",
-      "image": "https://i.ibb.co.com/placeholder-bookpilot.png",
+      "image": "https://i.ibb.co.com/HDy20F8S/Screenshot-2025-12-20-235558.png",
       "tags": [
         "React",
         "Tailwind CSS",
@@ -30,7 +30,7 @@
       "id": 3,
       "title": "GizmoGrid — Next.js eCommerce Platform",
       "description": "A comprehensive eCommerce platform with Google OAuth authentication, protected product management dashboard, search and category filters, and responsive design. Features public product browsing and secure user-specific product listings.",
-      "image": "https://i.ibb.co.com/placeholder-gizmogrid.png",
+      "image": "https://i.ibb.co.com/8g6zsh69/Screenshot-2025-12-20-235809.png",
       "tags": [
         "Next.js 16",
         "Firebase Auth",
