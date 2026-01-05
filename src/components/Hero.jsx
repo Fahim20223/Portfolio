@@ -1,42 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
+  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
+  const titles = [
+    "Full Stack Developer",
+    "MERN Stack Developer",
+    "Frontend Developer",
+  ];
 
-  const imageVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
-  };
+  useEffect(() => {
+    const currentTitle = titles[currentTitleIndex];
+
+    if (isTyping) {
+      // Typing animation
+      if (displayedText.length < currentTitle.length) {
+        const timeout = setTimeout(() => {
+          setDisplayedText(currentTitle.slice(0, displayedText.length + 1));
+        }, 100); // Typing speed
+        return () => clearTimeout(timeout);
+      } else {
+        // Finished typing, wait then start deleting
+        const timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 2000); // Wait 2 seconds before deleting
+        return () => clearTimeout(timeout);
+      }
+    } else {
+      // Deleting animation
+      if (displayedText.length > 0) {
+        const timeout = setTimeout(() => {
+          setDisplayedText(displayedText.slice(0, -1));
+        }, 50); // Deleting speed (faster)
+        return () => clearTimeout(timeout);
+      } else {
+        // Finished deleting, move to next title
+        setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
+        setIsTyping(true);
+      }
+    }
+  }, [displayedText, isTyping, currentTitleIndex, titles]);
 
   return (
     <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
@@ -76,7 +82,16 @@ const Hero = () => {
             >
               I am a{" "}
               <span className="text-primary font-semibold">
-                Full Stack Developer
+                {displayedText}
+                <motion.span
+                  className="inline-block w-0.5 h-8 bg-primary ml-1"
+                  animate={{ opacity: [1, 0] }}
+                  transition={{
+                    duration: 0.8,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                  }}
+                />
               </span>
             </motion.p>
             <motion.p
