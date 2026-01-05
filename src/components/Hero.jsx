@@ -7,8 +7,8 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
 
   const titles = [
-    "Full Stack Developer",
     "MERN Stack Developer",
+    "Full Stack Developer",
     "Frontend Developer",
   ];
 
@@ -65,7 +65,7 @@ const Hero = () => {
               Hi, I am
             </motion.p>
             <motion.h1
-              className="text-5xl sm:text-7xl font-bold text-white mt-2"
+              className="text-5xl lg:text-7xl font-bold text-white mt-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
@@ -74,7 +74,7 @@ const Hero = () => {
               Md Fahim Shahrier
             </motion.h1>
             <motion.p
-              className="text-3xl sm:text-4xl mt-4 text-slate-200"
+              className="text-3xl lg:text-4xl mt-4 text-slate-200"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
@@ -109,7 +109,7 @@ const Hero = () => {
               with modern web technologies to deliver high-quality work.
             </motion.p>
             <motion.a
-              href="https://drive.google.com/uc?export=download&id=1AMIEVMc3uIIdnO8N1cVlbNJ9ZpqNtA_9"
+              href="https://drive.google.com/uc?export=download&id=1z4Xj874WJKCYNr2D-K9hVilXZBXvWXKl"
               download="Fahim_Shahrier_Resume.pdf"
               className="mt-8 inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300"
               initial={{ opacity: 0, y: 20 }}
