@@ -26,8 +26,8 @@ const EducationCard = ({
   >
     {/* Card */}
     <div
-      className={`w-full lg:w-5/12 ${
-        isLeft ? "text-left" : "text-right lg:text-left"
+      className={`w-full md:w-5/12 ${
+        isLeft ? "text-left" : "text-right md:text-left"
       }`}
     >
       <motion.div
@@ -38,7 +38,7 @@ const EducationCard = ({
         {/* Header with Logo */}
         <motion.div
           className={`flex items-start gap-4 mb-4 ${
-            isLeft ? "" : "lg:flex-row-reverse"
+            isLeft ? "" : "md:flex-row-reverse"
           }`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,7 +53,7 @@ const EducationCard = ({
             <img
               src={logo}
               alt={institution}
-              className="w-16 h-16 rounded-lg object-cover border-2 border-gray-700"
+              className="w-16 h-16 rounded-md object-cover border-2 border-gray-700"
               onError={(e) => {
                 e.target.src = "https://via.placeholder.com/64?text=Logo";
               }}
@@ -128,7 +128,7 @@ const EducationCard = ({
 
     {/* Timeline Dot */}
     <motion.div
-      className="hidden lg:flex flex-col items-center flex-shrink-0"
+      className="hidden md:flex flex-col items-center flex-shrink-0"
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       viewport={{ once: false }}
@@ -156,7 +156,7 @@ const EducationCard = ({
     </motion.div>
 
     {/* Empty Space for alternating layout */}
-    <div className="hidden lg:block w-5/12" />
+    <div className="hidden md:block w-5/12" />
   </motion.div>
 );
 
@@ -229,7 +229,7 @@ const EducationTimeline = () => {
         <div className="relative">
           {/* Vertical Line - Hidden on mobile */}
           <motion.div
-            className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-500"
+            className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gradient-to-b from-purple-500 via-blue-500 to-purple-500"
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             viewport={{ once: false }}
