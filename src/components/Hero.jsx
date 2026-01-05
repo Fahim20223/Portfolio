@@ -65,7 +65,7 @@ const Hero = () => {
               Hi, I am
             </motion.p>
             <motion.h1
-              className="text-5xl lg:text-7xl font-bold text-white mt-2"
+              className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mt-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
@@ -74,7 +74,7 @@ const Hero = () => {
               Md Fahim Shahrier
             </motion.h1>
             <motion.p
-              className="text-3xl lg:text-4xl mt-4 text-slate-200"
+              className="text-2xl md:text-3xl lg:text-4xl mt-4 text-slate-200"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false }}
