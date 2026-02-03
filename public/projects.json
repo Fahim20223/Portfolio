@@ -26,8 +26,25 @@
       "github": "https://github.com/Fahim20223/artify-client",
       "demo": "https://artify-client-d88f7.web.app/"
     },
+
     {
       "id": 3,
+      "title": "CareHub — Caregiving Service Booking Platform",
+      "description": "CareHub is a modern web application that helps users book reliable caregiving services for babies, elderly, and sick individuals. It features secure authentication, dynamic service booking with cost calculation, booking management, private routes, dark/light mode, and smooth UI animations.",
+      "image": "https://i.ibb.co.com/qMC1Ns6w/Screenshot-2026-01-17-082200.png",
+      "tags": [
+        "Next.js",
+        "NextAuth",
+        "Tailwind CSS",
+        "Framer Motion",
+        "JavaScript"
+      ],
+      "github": "https://github.com/Fahim20223/CareHub",
+      "demo": "https://carehub-coral.vercel.app/"
+    },
+
+    {
+      "id": 4,
       "title": "GizmoGrid — Next.js eCommerce Platform",
       "description": "A comprehensive eCommerce platform with Google OAuth authentication, protected product management dashboard, search and category filters, and responsive design. Features public product browsing and secure user-specific product listings.",
       "image": "https://i.ibb.co.com/8g6zsh69/Screenshot-2025-12-20-235809.png",
@@ -42,7 +59,7 @@
       "demo": "https://e-commerce-client-nn7p.vercel.app/"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "GreenNest — Indoor Plant Care & Shopping",
       "description": "GreenNest is a modern single-page web application for plant lovers, offering plant shopping, care guides, customer reviews, and expert consultation booking. Built with Firebase authentication and smooth React Router navigation.",
       "image": "https://i.ibb.co.com/PvS4FNF8/Screenshot-2025-12-05-150641.png",
@@ -57,7 +74,7 @@
       "demo": "https://assignment-9-4089f.web.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Hero IO — App Store Showcase",
       "description": "A responsive and interactive app store web application where users can browse, search, sort, and install apps. Includes detailed app pages, review charts, installation management, and smooth UI animations.",
       "image": "https://i.ibb.co.com/FbyTrhHP/Screenshot-2025-12-05-150120.png",
