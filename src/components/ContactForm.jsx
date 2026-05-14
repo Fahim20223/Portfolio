@@ -428,7 +428,7 @@ const ContactForm = () => {
             viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            © 2025 Fahim Shahrier. All rights reserved.
+            © 2026 Fahim Shahrier. All rights reserved.
           </motion.p>
         </motion.footer>
       </div>
