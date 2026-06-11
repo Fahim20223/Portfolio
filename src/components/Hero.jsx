@@ -46,7 +46,7 @@ const Hero = () => {
 
   return (
     <div className="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 md:pt-24 md:pb-32">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 md:pt-24 md:pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <motion.div
             className="text-center lg:text-left"
