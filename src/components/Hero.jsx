@@ -101,14 +101,14 @@ const Hero = () => {
               viewport={{ once: false }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              I am a dedicated Web Developer specializing in the MERN stack,
+              I am a dedicated Web Developer specializing in the MERN Stack,
               with a strong focus on building responsive, scalable, and
               user-centric applications. I enjoy creating clean interfaces,
               integrating APIs, and developing full-stack features that solve
               real problems. I’m always improving my skills and staying updated
               with modern web technologies to deliver high-quality work.
             </motion.p>
-            <motion.a
+            {/* <motion.a
               href="https://drive.google.com/uc?export=download&id=1z4Xj874WJKCYNr2D-K9hVilXZBXvWXKl"
               download="Fahim_Shahrier_Resume.pdf"
               className="mt-8 inline-block bg-primary text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-primary/30 dark:shadow-glow hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-all duration-300"
@@ -120,7 +120,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
             >
               DOWNLOAD RESUME
-            </motion.a>
+            </motion.a> */}
           </motion.div>
           <motion.div
             className="flex justify-center"
